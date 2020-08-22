@@ -75,9 +75,9 @@ namespace TwitchAPI
 
         public event EventHandler TokenUpdated;
 
-        public Authenticator(TwitchClient application)
+        public Authenticator(TwitchClient client)
         {
-            Client = application;
+            Client = client;
 
             if (!HttpListener.IsSupported)
             {
